@@ -1,0 +1,19 @@
+{
+    "clientes": [
+        {
+            "nombre": "Carlos Sanhueza"
+        },
+        {
+            "nombre": "Ernesto Bobadilla"
+        },
+        {
+            "nombre": "Cynthia Rodriguez"
+        },
+        {
+            "nombre": "Christopher Chappa"
+        },
+        {
+            "nombre": "Felipe Gutierrez"
+        }
+    ]
+}

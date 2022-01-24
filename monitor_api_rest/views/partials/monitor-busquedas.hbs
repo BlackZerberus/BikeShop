@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3>Monitor de inventario</h3>
+    </div>
+</div>
+<form id="form-consulta">
+    <div class="row">
+        <div class="col-sm-3">
+            <label for="tiendas"><span class="fs-6 fw-light">Tienda</span></label>
+            <select class="form-select form-select-sm" name="id_tienda" id="tiendas">
+                <option selected>seleccione...</option>
+                {{#each tiendas}}
+                    <option value="{{this.store_id}}">{{this.store_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="col-sm-3">
+            <label for="categorias"><span class="fs-6 fw-light">Categoría</span></label>
+            <select class="form-select form-select-sm" name="id_categoria" id="categorias">
+                <option selected>seleccione...</option>
+                {{#each categorias}}
+                    <option value="{{this.category_id}}">{{this.category_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="col-sm-3">
+            <label for="marcas"><span class="fs-6 fw-light">Marca</span></label>
+            <select class="form-select form-select-sm" name="id_marca" id="marcas">
+                <option selected>seleccione...</option>
+                {{#each marcas}}
+                    <option value="{{this.brand_id}}">{{this.brand_name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="col-sm-3">
+            <input type="submit" class="btn btn-primary btn-sm mt-4" id="btn_search" value="Buscar" />
+        </div>
+    </div>
+</form>
